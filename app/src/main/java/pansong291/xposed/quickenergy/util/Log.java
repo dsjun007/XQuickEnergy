@@ -44,7 +44,7 @@ public class Log {
 
     public static String getFormatDateTime() {
         if (sdf == null)
-            sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
+            sdf = new SimpleDateFormat("MM-dd HH:mm:ss", Locale.getDefault());
         return sdf.format(new Date());
     }
 
