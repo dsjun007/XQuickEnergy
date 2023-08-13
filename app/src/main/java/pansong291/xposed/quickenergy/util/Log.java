@@ -18,17 +18,17 @@ public class Log {
 
     public static boolean forest(String s) {
         recordLog(s, "");
-        return FileUtils.append2File(getFormatTime() + " " + s + "\n", FileUtils.getForestLogFile());
+        return FileUtils.append2File(getFormatDateTime() + " " + s + "\n", FileUtils.getForestLogFile());
     }
 
     public static void farm(String s) {
         recordLog(s, "");
-        FileUtils.append2File(getFormatDateTime() + " " + s + "\n", FileUtils.getFarmLogFile());
+        FileUtils.append2File(getFormatTime() + " " + s + "\n", FileUtils.getFarmLogFile());
     }
 
     public static void other(String s) {
         recordLog(s, "");
-        FileUtils.append2File(getFormatDateTime() + " " + s + "\n", FileUtils.getOtherLogFile());
+        FileUtils.append2File(getFormatTime() + " " + s + "\n", FileUtils.getOtherLogFile());
     }
 
     public static void recordLog(String str) {
