@@ -42,7 +42,7 @@ public class Log {
         FileUtils.append2SimpleLogFile(str);
     }
 
-    public static String getFormatDateTime() {
+    public static String getFormatTime() {
         if (sdf == null)
             sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
         return sdf.format(new Date());
