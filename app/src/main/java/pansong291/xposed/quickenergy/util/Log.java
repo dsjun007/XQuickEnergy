@@ -23,12 +23,12 @@ public class Log {
 
     public static void farm(String s) {
         recordLog(s, "");
-        FileUtils.append2File(getFormatTime() + " " + s + "\n", FileUtils.getFarmLogFile());
+        FileUtils.append2File(getFormatDateTime() + " " + s + "\n", FileUtils.getFarmLogFile());
     }
 
     public static void other(String s) {
         recordLog(s, "");
-        FileUtils.append2File(getFormatTime() + " " + s + "\n", FileUtils.getOtherLogFile());
+        FileUtils.append2File(getFormatDateTime() + " " + s + "\n", FileUtils.getOtherLogFile());
     }
 
     public static void recordLog(String str) {
@@ -42,18 +42,18 @@ public class Log {
         FileUtils.append2SimpleLogFile(str);
     }
 
-    public static String getFormatTime() {
+    public static String getFormatDateTime() {
         if (sdf == null)
             sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
         return sdf.format(new Date());
     }
 
     public static String getFormatDate() {
-        return getFormatTime().split(" ")[0];
+        return getFormatDateTime().split(" ")[0];
     }
 
     public static String getFormatTime() {
-        return getFormatTime().split(" ")[1];
+        return getFormatDateTime().split(" ")[1];
     }
 
 }
