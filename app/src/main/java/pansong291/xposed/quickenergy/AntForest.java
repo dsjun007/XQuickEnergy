@@ -106,7 +106,6 @@ public class AntForest {
      * Check energy ranking.
      *
      * @param loader the loader
-     * @param times  the times
      */
     public static void checkEnergyRanking(ClassLoader loader) {
         if (RuntimeInfo.getInstance().getLong(RuntimeInfo.RuntimeInfoKey.ForestPauseTime) > System
