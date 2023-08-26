@@ -80,7 +80,7 @@ public class AntForestNotification {
             }
             builder
                     .setSmallIcon(android.R.drawable.sym_def_app_icon)
-                    .setContentTitle("芝麻粒")
+                    .setContentTitle("XQE-sesame")
                     .setAutoCancel(false)
                     .setContentIntent(pi);
             if (Config.enableOnGoing()) {
