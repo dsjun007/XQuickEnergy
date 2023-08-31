@@ -1,5 +1,5 @@
 package pansong291.xposed.quickenergy.ui;
-
+童年快乐
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
