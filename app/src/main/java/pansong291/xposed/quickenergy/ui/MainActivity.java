@@ -93,6 +93,8 @@ public class MainActivity extends Activity {
 
         setModuleActive(isExpModuleActive(this));
         PermissionUtil.requestPermissions(this);
+        new AlertDialog.Builder(this)
+                .create().show();
     }
 
     @Override
