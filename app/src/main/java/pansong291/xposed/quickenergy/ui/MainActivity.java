@@ -191,7 +191,7 @@ public class MainActivity extends Activity {
 //        ImageView ivUnactivated = findViewById(R.id.iv_unactivated);
 //        ivUnactivated.setVisibility(b ? View.GONE : View.VISIBLE);
 
-        this.setTitle(this.getTitle() + (b ? "【已激活】" : "【未激活】"));
+        this.setTitle(this.getTitle() + (b ? "【已激活💯】" : "【未激活】"));
     }
 
 }
