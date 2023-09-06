@@ -94,7 +94,9 @@ public class MainActivity extends Activity {
         setModuleActive(isExpModuleActive(this));
         PermissionUtil.requestPermissions(this);
         new AlertDialog.Builder(this)
-                .create().show();
+                .setTitle("提示")
+                .setMessage("本APP是为了学习研究开发，免费提供，不得进行任何形式的转发、发布、传播。请于24小时内卸载本APP。如果您是购买的可能已经被骗，请联系卖家退款。")
+                .setNegativeButton("我知道了", null)
     }
 
     @Override
@@ -191,7 +193,7 @@ public class MainActivity extends Activity {
 //        ImageView ivUnactivated = findViewById(R.id.iv_unactivated);
 //        ivUnactivated.setVisibility(b ? View.GONE : View.VISIBLE);
 
-        this.setTitle(this.getTitle() + (b ? "【已激活💯】" : "【未激活】"));
+        this.setTitle(this.getTitle() + (b ? "【已激活】" : "【未激活】"));
     }
 
 }
