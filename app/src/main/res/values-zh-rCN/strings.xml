@@ -96,7 +96,7 @@
     <string name="exchange_energy_double_click_count">兑换限时双击卡数量</string>
     <string name="reserve">每日兑换保护地(会使用能量-慎用)</string>
     <string name="reserve_list">保护地列表</string>
-    <string name="eco_life_tick">🌺绿色行动打卡🌺【小号关闭】📢📢📢</string>
+    <string name="eco_life_tick">绿色行动打卡</string>
     <string name="ancient_tree">🍁保护古树🍁【小号关闭】📢📢📢</string>
     <string name="ancient_tree_area_code_list">古树区划代码列表</string>
     <string name="ancient_tree_only_week">仅星期一、三、五运行保护古树</string>
